@@ -1,21 +1,16 @@
 import requests
 
 
-def translate_text(text, source_lang, target_lang):
-    url = "http://api.mymemory.translated.net/get"
-    params = {
-        "q": text,
-        "langpair": f"{source_lang}|{target_lang}"
-    }
-    response = requests.get(url, params=params)
-    translation = response.json()["responseData"]["translatedText"]
+def translate_text(text, target_language):
+    url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl={target_language}&dt=t&q={text}"
+    response = requests.get(url)
+    translation = response.json()[0][0][0]
     return translation
 
 
 # Example usage
-text_to_translate = input("text: ")
-source_language = "en"
+text_to_translate = "Hello, how are you?"
 target_language = "fr"
 
-translated_text = translate_text(text_to_translate, source_language, target_language)
+translated_text = translate_text(text_to_translate, target_language)
 print("Translated text:", translated_text)

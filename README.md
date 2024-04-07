@@ -1,23 +1,29 @@
-# Translate Text with MyMemory API
+# Translate Text with Google's-Unofficial API
 ### like google translator for free
 
-This Python script provides a simple function to translate text from one language to another using the MyMemory API.
+This Python script provides a simple function to translate text from one language to another using the Google's  API.
 
 ## Introduction
 
-The `translate_text.py` script allows you to translate text from a source language to a target language using the MyMemory API. The script is easy to use and can be integrated into your own Python applications.
+The `translate_text.py` script allows you to translate text from a source language to a target language using the Google's API. The script is easy to use and can be integrated into your own Python applications.
 
+
+```angular2html
+Note: 
+        This is an unofficial translation 
+        api from google.
+```
 ## How it Works
 
 The script defines a single function, `translate_text`, which takes three parameters: `text` (the text to be translated), `source_lang` (the source language of the text), and `target_lang` (the language to translate the text into).
 
-The function uses the `requests` module to send a GET request to the MyMemory API with the specified text and language parameters. The API returns a JSON response containing the translated text, which is then extracted and returned by the function.
+The function uses the `requests` module to send a GET request to the Google's API with the specified text and language parameters. The API returns a JSON response containing the translated text, which is then extracted and returned by the function.
 
 ## Features
 
-* Translates text from one language to another using the MyMemory API
+* Translates text from one language to another using the Google's API
 * Easy to use and integrate into your own Python applications
-* Supports all languages supported by the MyMemory API
+* Supports all languages supported by the Google's API
 
 ## Contribution
 
