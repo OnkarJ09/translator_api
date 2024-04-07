@@ -1,0 +1,5 @@
+# for virtual environment
+venv
+
+# for pycharm data
+.idea
